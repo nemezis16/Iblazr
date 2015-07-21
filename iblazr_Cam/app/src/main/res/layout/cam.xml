@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/focusDetect"></FrameLayout>-->
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    </SurfaceView>
+
+
+    <FrameLayout android:id="@+id/linearLayout1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="bottom|center">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/circle"
+            android:id="@+id/circleC"
+            android:layout_marginBottom="20dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/iblazerico"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iblazerico"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="34dp"
+            android:onClick="onClickPicture"
+            />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative">
+        <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flash"
+            android:id="@+id/flash1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flash2"
+            android:id="@+id/flash2"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flash3"
+            android:id="@+id/flash3"/>
+        </FrameLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:background="@drawable/drop_shadow" >
+        </View>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/drop_shadow_bottom"
+            android:layout_alignParentBottom="true">
+        </View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/galleryIco">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gallery"
+                android:drawableTop="@drawable/gallery"
+                />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/nativeIco">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/natflash"
+                android:drawableTop="@drawable/natflash"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/frontIco">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/front"
+                android:drawableTop="@drawable/front"
+                />
+        </LinearLayout>
+        </RelativeLayout>
+
+
+        <!--
+        <Button android:text="Button"
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"></Button>
+        <Button android:text="Button"
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Button>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_gravity="right|center"
+        >
+        <!--<SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:rotation="270"
+            android:id="@+id/seekBar2"/>
+-->
+       <snp.android.osadchuk.com.iblazr_android.VerticalSeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:id="@+id/seekBar2"
+            android:progressDrawable="@drawable/styled_progress"
+            android:thumb="@drawable/thumb"
+            android:indeterminate="false"
+            android:thumbOffset="0px"
+            android:progress="55"/>
+
+        <!--android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_margin="10dp"
+           android:paddingLeft="15dp"
+           android:paddingRight="15dp"-->
+
+            <!--android:rotation="270"-->
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/introducingLayout">
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tittlescreen"
+        android:id="@+id/ImView"/>
+    </LinearLayout>
+
+</FrameLayout>

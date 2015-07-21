@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Iblazr_android</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+    <string name="natflash">native</string>
+    <string name="gallery">gallery</string>
+    <string name="front">front</string>
+    <string name="Intro">Iblazr</string>
+</resources>
